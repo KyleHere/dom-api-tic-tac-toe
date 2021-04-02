@@ -1,5 +1,17 @@
 let currentPlayerSymbol= "x";
 let squareValues = ["", "", "" , "", "", "", "", "", ""];
+let gameStatus = ""
+
+const checkGameStatus =  ( )=>{
+    for(let i = 0; i < squareValues.length; i += 3){
+        if(squareValues[i] === squareValues[i+1] === squareValues[i+2]){
+            gameStatus = squareValues[i];
+        }
+    }
+    for(let i = 0; i < 3; i++){
+        if()
+    }
+}
 
 window.addEventListener("DOMContentLoaded", () => {
     console.log(document.getElementById("tic-tac-toe-board"))
