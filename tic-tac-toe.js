@@ -6,12 +6,17 @@ const checkGameStatus =  ( )=>{
     for(let i = 0; i < squareValues.length; i += 3){
         if(squareValues[i] === squareValues[i+1] === squareValues[i+2]){
             gameStatus = squareValues[i];
-        }
-    }
+        };
+    };
     for(let i = 0; i < 3; i++){
-        if()
-    }
-}
+        if(squareValues[i] === squareValues[i+3] === squareValues[i+6]){
+            gameStatus = squareValues[i];
+        };
+    };
+    // for(let i = 0; ){
+
+    // };
+};
 
 window.addEventListener("DOMContentLoaded", () => {
     console.log(document.getElementById("tic-tac-toe-board"))
